@@ -445,7 +445,7 @@ viewKey model letter =
                     )
 
                 ( x, False ) ->
-                    ( text (charToString (Char.toLower x)), 55, 18 )
+                    ( text (charToString (Char.toUpper x)), 55, 18 )
 
                 ( x, True ) ->
                     ( text (charToString (Char.toUpper x))
