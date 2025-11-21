@@ -1085,7 +1085,7 @@ handleCharacter x model =
 
         thekey ->
             if Char.isAlpha thekey then
-                { model | board = updateLastWord model (Char.toLower thekey) model.board }
+                { model | board = updateLastWord model (Char thekey) model.board }
 
             else
                 model
